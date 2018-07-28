@@ -1,35 +1,40 @@
 #hero {
-  height: 100vh;
+  padding: 90px 0px;
   position: relative;
-  @include flexbox();
-  @include justify-content(center);
-  @include align-items(center);
 
-  .fixed-nav {
-    display: block;
-    position: absolute;
-    bottom: 20px;
 
-    i {
-      color: #333333;
-      font-size: 50px;
+  .hero-container {
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+
+    .fixed-nav {
+      display: block;
+
+      i {
+        color: #333333;
+        font-size: 50px;
+      }
     }
-  }
 
-  .hero-img {
-    width: 60%;
-    img {
-      max-width: 100%;
+    .hero-img {
+      width: 60%;
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
 
 @media (max-width: 780px){
   #hero {
-    padding: 70px 0px;
+    padding: 60px 0px;
     height:auto;
-    .hero-img {
-      width: 80%;
+
+    .hero-container {
+      .hero-img {
+        width: 80%;
+      }
     }
   }
 }
