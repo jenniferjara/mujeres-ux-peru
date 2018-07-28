@@ -1,0 +1,14 @@
+#hero {
+  width: 60%;
+  margin: 50px auto 50px;
+  position: relative;
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 780px){
+  #hero {
+    width: 80%;
+  }
+}

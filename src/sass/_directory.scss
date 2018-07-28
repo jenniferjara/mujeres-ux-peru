@@ -1,0 +1,74 @@
+#directory {
+  h2.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+  .directory-container {
+    width: 100%;
+    margin: 50px auto 30px;
+    @include flexbox();
+    @include justify-content(space-between);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: wrap row;
+    flex-flow: row wrap;
+
+    .directory-person {
+      width: 250px;
+      margin: 0 auto 30px;
+      background-color: #fff;
+      padding: 0 0 18px 14px;
+      position: relative;
+      -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+      box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+      @include flexbox();
+      @include justify-content(flex-end)
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+      flex-flow: row wrap;
+
+      .directory-photo {
+        width: 200px;
+        display: inline-block;
+        position: relative;
+        bottom: 10px;
+        img {
+          width: 100%;
+        }
+      }
+
+      .directory-name, .directory-title, .directory-jobTitle, .directory-social {
+        width: 100%;
+        padding-top: 5px;
+      }
+      
+      .directory-name {
+        text-transform: uppercase;
+        color: #433485;
+      }
+      .directory-title {
+        font-size: 12px;
+      }
+      .directory-jobTitle, .directory-social {
+        font-family: 'PT Mono', monospace;
+        font-size: 12px;
+      }
+      .directory-social {
+        margin-top: 10px;
+        padding-right: 15px;
+        text-align: right;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  #directory {
+    .directory-container {
+      width: 250px;
+    }
+  }
+}

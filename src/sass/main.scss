@@ -1,0 +1,21 @@
+@import "mixins";
+@import "hero";
+@import "social-media";
+@import "directory";
+
+
+body {
+  font-family: Montserrat,sans-serif
+}
+
+hr {
+  width: 90%;
+  border-top: 1px dashed #ccc;
+  margin: auto;
+}
+
+footer {
+  background-color: #ff937e;
+  color: #ffffff;
+  padding: 20px;
+}
