@@ -9,12 +9,19 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
     <link rel="stylesheet" href="public/assets/css/public.css">
+    <link rel="stylesheet" href="public/assets/css/animate.min.css">
 </head>
 <body>
     <div>
         <section id="hero">
-            <img src="public/assets/img/logo-black.png" alt="logo">
+            <a class="fixed-nav animated infinite pulse" href="#social">
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+            </a>
+            <div class="hero-img">
+                <img src="public/assets/img/logo-black.png" alt="logo">
+            </div>
         </section>
+        <hr>
         <section id="social">
             <a class="social-content" href="https://www.instagram.com/masmujeresux_pe/" target="_blank">
                 <div class="social-icon">
@@ -34,7 +41,7 @@
                 </div>
                 <div class="social-text">Facebook</div>
             </a>
-            <a class="social-content" href="">
+            <a class="social-content" href="https://medium.com/@masmujeresux.pe" target="_blank">
                 <div class="social-icon">
                     <img src="public/assets/img/medium.png" alt="logo-medium">
                 </div>
@@ -101,5 +108,15 @@
         </footer>
     </div>
     <script type="text/javascript" src="public/assets/js/public.js"></script>
+    <script type="text/javascript">
+        $('a.fixed-nav').on("click", function (e) {
+            e.preventDefault();
+
+            var id = $(this).attr("href"), posi, ele, padding = 0;
+            ele = $(id); posi = ($(ele).offset()||0).top - padding;
+
+            $('html, body').animate({scrollTop:posi}, 1200);
+        });
+    </script>
 </body>
 </html>

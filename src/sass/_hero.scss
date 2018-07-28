@@ -1,14 +1,35 @@
 #hero {
-  width: 60%;
-  margin: 50px auto 50px;
+  height: 100vh;
   position: relative;
-  img {
-    max-width: 100%;
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+
+  .fixed-nav {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+
+    i {
+      color: #333333;
+      font-size: 50px;
+    }
+  }
+
+  .hero-img {
+    width: 60%;
+    img {
+      max-width: 100%;
+    }
   }
 }
 
 @media (max-width: 780px){
   #hero {
-    width: 80%;
+    padding: 70px 0px;
+    height:auto;
+    .hero-img {
+      width: 80%;
+    }
   }
 }
