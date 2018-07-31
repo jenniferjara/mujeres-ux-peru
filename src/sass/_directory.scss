@@ -1,6 +1,7 @@
 #description {
   padding: 50px 0px;
   font-size: 16px;
+  text-align: justify;
 }
 
 #directory {
@@ -56,6 +57,9 @@
       }
       .directory-title {
         font-size: 12px;
+      }
+      .directory-jobTitle {
+        font-weight: bold;
       }
       .directory-jobTitle, .directory-social {
         font-family: 'PT Mono', monospace;
