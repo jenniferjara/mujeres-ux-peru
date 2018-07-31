@@ -1,7 +1,42 @@
 #hero {
-  padding: 90px 0px;
+  padding: 50px 0px;
   position: relative;
 
+
+  .social {
+    max-width: 65%;
+    margin: 0 auto 0;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    padding: 30px 0px 30px;
+
+    a.social-content {
+      width: calc(100% / 7);
+      text-align: center;
+      text-decoration: none;
+
+      div.social-icon {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+          fill: #434343;
+          transition: 200ms ease-in;
+        }
+      }
+      div.social-text {
+        color: #434343;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 5px;
+        transition: 200ms ease-in;
+      }
+    }
+  }
 
   .hero-container {
     @include flexbox();
@@ -19,7 +54,7 @@
     }
 
     .hero-img {
-      width: 60%;
+      width: 50%;
       margin: 0 auto;
       img {
         max-width: 100%;
@@ -32,6 +67,16 @@
   #hero {
     padding: 60px 0px;
     height:auto;
+
+    .social {
+      max-width: 80%;
+      justify-content: center;
+
+      a.social-content{
+        width: 45%;
+        margin: 0 5px 15px;
+      }
+    }
 
     .hero-container {
       .hero-img {

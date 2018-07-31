@@ -1,5 +1,10 @@
+#description {
+  padding: 50px 0px;
+  font-size: 16px;
+}
+
 #directory {
-  padding: 70px 0px;
+  padding: 50px 0px;
   h2.title {
     text-transform: uppercase;
     text-align: center;
@@ -60,12 +65,17 @@
         margin-top: 10px;
         padding-right: 15px;
         text-align: right;
-        text-decoration: underline;
-        color: #433485;
+
+        a {
+          color: #228276;
+          text-decoration: none;
+          border-bottom: 1px solid #228276;
+        }
       }
     }
   }
 }
+
 
 @media (max-width: 780px) {
   #directory {
