@@ -63,6 +63,14 @@
   }
 }
 
+@media (max-width: 992px){
+  #hero {
+    .social {
+      max-width: 85%;
+    }
+  }
+}
+
 @media (max-width: 780px){
   #hero {
     padding: 60px 0px;
